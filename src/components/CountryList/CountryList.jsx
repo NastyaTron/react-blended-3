@@ -6,7 +6,7 @@ export const CountryList = ({ countries }) => {
     <Grid>
       {countries.map(country => (
         <GridItem key={country.id}>
-          <Link>
+          <Link to={`country/${country.id}`}>
             <img src={country.flag} alt={country.country} />
           </Link>
         </GridItem>
